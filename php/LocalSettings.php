@@ -18,15 +18,15 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 ## Uncomment this to disable output compression
 # $wgDisableOutputCompression = true;
 
-$wgSitename      = "My Wiki Bitches";
-$wgMetaNamespace = "My_Wiki_Bitches";
+$wgSitename      = "OpenShift Wiki";
+$wgMetaNamespace = "OpenShift_Wiki";
 
 ## The URL base path to the directory containing the wiki;
 ## defaults for all runtime URL paths are based off of this.
 ## For more information on customizing the URLs
 ## (like /w/index.php/Page_title to /wiki/Page_title) please see:
 ## http://www.mediawiki.org/wiki/Manual:Short_URL
-$wgScriptPath       = "/mediawiki-1.20.2";
+$wgScriptPath       = $IP;
 $wgScriptExtension  = ".php";
 
 ## The protocol and server name to use in fully-qualified URLs
@@ -34,6 +34,7 @@ $wgServer           = "http://localhost";
 
 ## The relative URL path to the skins directory
 $wgStylePath        = "$wgScriptPath/skins";
+$wgStyleDirectory   = "$wgScriptPath/skins";
 
 ## The relative URL path to the logo.  Make sure you change this from the default,
 ## or else you'll overwrite your logo when you upgrade!
@@ -44,8 +45,8 @@ $wgLogo             = "$wgStylePath/common/images/wiki.png";
 $wgEnableEmail      = true;
 $wgEnableUserEmail  = true; # UPO
 
-$wgEmergencyContact = "apache@localhost";
-$wgPasswordSender   = "apache@localhost";
+$wgEmergencyContact = "example@example.com";
+$wgPasswordSender   = "example@example.com";
 
 $wgEnotifUserTalk      = false; # UPO
 $wgEnotifWatchlist     = false; # UPO
