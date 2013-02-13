@@ -26,15 +26,11 @@ $wgMetaNamespace = "OpenShift_Wiki";
 ## For more information on customizing the URLs
 ## (like /w/index.php/Page_title to /wiki/Page_title) please see:
 ## http://www.mediawiki.org/wiki/Manual:Short_URL
-$wgScriptPath       = $IP;
+$wgScriptPath       = "";
 $wgScriptExtension  = ".php";
-
-## The protocol and server name to use in fully-qualified URLs
-$wgServer           = "http://localhost";
 
 ## The relative URL path to the skins directory
 $wgStylePath        = "$wgScriptPath/skins";
-$wgStyleDirectory   = "$wgScriptPath/skins";
 
 ## The relative URL path to the logo.  Make sure you change this from the default,
 ## or else you'll overwrite your logo when you upgrade!
